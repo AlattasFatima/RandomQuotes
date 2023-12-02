@@ -1,28 +1,23 @@
-const body = document.getElementById('html');
-const btn = document.getElementById('btn2');
-let mode="light"
-
-function bgColor(){
+// Varibales 
+let btn = document.getElementById('generate')
+let quote = document.querySelector('.qoute');
+let person = document.querySelector('.person');
+const quotes = [
+    {quote: `“Be yourself; everyone else is already taken.”`,
+    person: `Oscar Wilde`},
+    {quote: `“Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.”`,
+    person: `Albert Einstein`},
+    {quote: `“A room without books is like a body without a soul.”`,
+    person: `Marcus tullius Cicero`},
+    {quote: `“Be who you are and say what you feel, because those who mind don't matter, and those who matter don't mind.”`,
+    person: `Bernard M. Baruch`},
+    {quote: `“It always seems impossible until it's done.”`,
+    person: `Nelson Mandela`},
     
-    if (mode === 'light'){
-    body.style.background ="darkseagreen";
-    mode = 'night';
-    }
-    else{
-        body.style.background = 'whitesmoke';
-        mode = 'light'
-    }
-}
+];
 
-btn.addEventListener('click', bgColor);
-
-const btn3 = document.getElementById('btn3');
-const btn1 = document.getElementById('btn1');
- 
-document.querySelector('#btn3').addEventListener('mouseover', function(e){
-    console.log(e.target.innerText = 'hovered!')
-}, true);
-
-document.getElementById('btn3').addEventListener('dblclick',function(f){
-    console.log(f.target.innerText = 'double clicked!')
-}, true);
+btn.addEventListener('click', function(){
+    let random = Math.floor(Math.random() * quotes.length );
+    quote.innerText = quotes[random].quote;
+    person.innerText = quotes[random].person;
+});
