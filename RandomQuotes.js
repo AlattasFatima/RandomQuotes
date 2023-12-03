@@ -3,6 +3,7 @@ let btn1 = document.getElementById('generate')
 let btn2 = document.getElementById('arabicQuotes')
 let quote = document.querySelector('.quote');
 let person = document.querySelector('.person');
+
 const eQuotes = [
     {quote: `“Be yourself; everyone else is already taken.”`,
     person: `Oscar Wilde`},
