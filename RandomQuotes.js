@@ -17,6 +17,13 @@ const eQuotes = [
     person: `Nelson Mandela`},
     {quote: `"The way to get started is to quit talking and begin doing."`,
     person: `Walt Disney`},
+    {quote: `"The greatest glory in living lies not in never falling, but in rising every time we fall."`,
+    person: `Nelson Mandela`},
+    {quote: `"If you look at what you have in life, you'll always have more. If you look at what you don't have in life, you'll never have enough."`,
+    person: `Oprah Winfrey`},
+    {quote: `"You must be the change you wish to see in the world."`,
+    person: `Mahatma Gandhi`},
+
 ];
 
 const aQuotes = [
@@ -33,7 +40,13 @@ const aQuotes = [
     {quote: `"ليس لدى المرء دائماً الوقت الكافي لتلبية رغباته الاخيرة."`,
     person: `جوزيه ساراماغو`},
     {quote: `"دراما الواقع أقوى ألف مرة وأكثر جموحاً من خيال أي كاتب."`,
-    person: `احمد خالد توفيق`}
+    person: `احمد خالد توفيق`},
+    {quote: `"لو أن الناس كلما استصعبوا أمرا تركوه ماقام للناس دنيا ولادين."`,
+    person: `عمر بن عبدالعزيز`},
+    {quote: `"ذو العقل يشقى في النعيم بعقله ... وأخو الجهالة في الشقاوة ينعمُ."`,
+    person: `ابو الطيب المتنبي`},
+    {quote: `"قد يتحول كل شي ضدك و يبقى الله معك ، فكن مع الله يكن كل شي معك."`,
+    person: `صلاح الدين الايوبي`},
 ];
 
 btn1.addEventListener('click', function(){
