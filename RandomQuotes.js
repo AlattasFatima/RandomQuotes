@@ -23,6 +23,11 @@ const eQuotes = [
     person: `Oprah Winfrey`},
     {quote: `"You must be the change you wish to see in the world."`,
     person: `Mahatma Gandhi`},
+    {quote: `"In the end, it's not the years in your life that count. It's the life in your years."`,
+    person: `Abraham Lincoln`},
+    {quote: `"The only thing we have to fear is fear itself."`,
+    person: `Franklin D. Roosevelt`},
+    
 
 ];
 
@@ -47,6 +52,11 @@ const aQuotes = [
     person: `ابو الطيب المتنبي`},
     {quote: `"قد يتحول كل شي ضدك و يبقى الله معك ، فكن مع الله يكن كل شي معك."`,
     person: `صلاح الدين الايوبي`},
+    {quote: `"من أحب الله رأى كل شئ جميلا."`,
+    person: `الإمام محمد الغزالي`},
+    {quote: `"لا تعبدوا الله ليعطي، بل اعبدوه ليرضى، فإن رضي أدهشكم بعطائه."`,
+    person: `الإمام محمد متولي الشعراوي`},
+    
 ];
 
 btn1.addEventListener('click', function(){
