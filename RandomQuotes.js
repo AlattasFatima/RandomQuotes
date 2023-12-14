@@ -1,8 +1,38 @@
 // Varibales 
-let btn1 = document.getElementById('generate')
-let btn2 = document.getElementById('arabicQuotes')
-let quote = document.querySelector('.quote');
+let btn1 = document.getElementById('generate');
+let btn2 = document.getElementById('arabicQuotes');
+let Rquote = document.querySelector('.quote');
 let person = document.querySelector('.person');
+const btnEL =  document.getElementById('btnEl');
+
+
+const apikey="mxrLacJBnOMn+MzdYUOSJw==VViR7IoJBxeRoYG3";
+
+const options = {
+    method:'GET',
+    headers:{
+        "X-Api-Key": apikey,
+    },
+};
+
+const apiURL = "https://api.api-ninjas.com/v1/quotes?category=happiness"
+
+async function getQ(){
+    console.log('sd');
+    const response = await fetch(apiURL, options);
+    const data = await response.json();
+    console.log(data);
+    Rquote.innerText = data.quote[0];
+    person.innerText = data.author[0];
+};
+
+btnEL.addEventListener('click', getQ);
+
+
+
+
+
+
 
 const eQuotes = [
     {quote: `“Be yourself; everyone else is already taken.”`,
@@ -53,9 +83,9 @@ const aQuotes = [
     {quote: `"قد يتحول كل شي ضدك و يبقى الله معك ، فكن مع الله يكن كل شي معك."`,
     person: `صلاح الدين الايوبي`},
     {quote: `"من أحب الله رأى كل شئ جميلا."`,
-    person: `الإمام محمد الغزالي`},
+    person: `الأمام محمد الغزالي`},
     {quote: `"لا تعبدوا الله ليعطي، بل اعبدوه ليرضى، فإن رضي أدهشكم بعطائه."`,
-    person: `الإمام محمد متولي الشعراوي`},
+    person: `الإمام محمد متولى الشعراوي`},
     
 ];
 
@@ -70,3 +100,4 @@ btn2.addEventListener('click', function(){
     quote.innerText = aQuotes[random].quote;
     person.innerText = aQuotes[random].person;
 });
+
