@@ -41,8 +41,12 @@ body{
 }
 
 .main .text-area{
-    font-size: larger;
+    font-size: large;
     line-height: 1.5;
+}
+
+.main .quote{
+    font-size: larger;
 }
 
 .main .person{
