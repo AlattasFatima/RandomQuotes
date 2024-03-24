@@ -12,6 +12,7 @@ const options = {
     },
 };
 
+
 async function getQ(){
     const response = await fetch(apiURL, options);
     const data = await response.json();
